@@ -1,0 +1,260 @@
+*
+{
+	margin:0 auto;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Dancing Script', cursive;
+}
+
+body{
+        background-color: #02010a;
+}
+.contenido{
+        margin: 0 auto;
+        color: white;
+        width: 900px;  
+}
+
+header{
+        background-color: #5b7989;
+	height: 6.8em;
+	color:white;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        color: white;
+        -webkit-border-top-left-radius: 10px;
+        -webkit-border-top-right-radius: 10px;
+        -moz-border-radius-topleft: 10px;
+        -moz-border-radius-topright: 10px;
+         border-top-left-radius: 10px;
+         border-top-right-radius: 10px;
+         animation: slidein 2s;
+}
+header h1{
+        width: 75%;
+        font-size: 2.2em;
+        padding-left: 2%;
+        text-shadow: 2px 2px #02010a;
+        margin: auto auto;
+}
+nav{
+       width: 25%;
+       /*width: 30%;*/
+       margin: auto auto; 
+       font-size: 1.2em;
+       padding-right: 2%;
+}
+
+nav a{
+       float:left;
+       color: white;
+       padding-right: 10%;
+}
+
+nav a[href="index.html"]{
+       text-decoration: none;
+}
+section{
+       display: flex;
+       flex-direction: row;
+       flex-wrap: wrap;
+}
+article
+{
+	padding: 5%;
+        text-align: center;
+}
+article a{
+        font-size: 1.2em;
+        color: black;
+}
+article img {
+        width: 100%;
+}
+
+#imgcentral{
+	background-color:  #82c3a6;
+        width: 100%;
+        
+	}
+        
+#imgcentral img{
+        -webkit-box-shadow: 2px 2px 0px 0px  black;
+        -moz-box-shadow: 2px 2px 0px 0px black;
+         box-shadow: 2px 2px 0px 0px black;
+        }
+#imgizq	{
+	background-color:  #d5c75f;
+	width: 50%;
+	}
+        
+#imgizq img{
+        -webkit-box-shadow: 2px 2px 0px 0px  #82c3a6;
+        -moz-box-shadow: 2px 2px 0px 0px  #82c3a6;
+        box-shadow: 2px 2px 0px 0px  #82c3a6;
+        -moz-transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+         transform: rotate(0deg);
+         transition-property: transform;
+         transition-duration: 0.5s;
+         transition-timing-function: linear;
+}
+               
+#imgizq img:hover{
+        -moz-transform: rotate(10deg);
+        -webkit-transform: rotate(10deg);
+        -o-transform: rotate(10deg);
+        -ms-transform: rotate(10deg);
+         transform: rotate(10deg);
+        }
+
+#imgder {
+	background-color:  #d5c75f;
+	width: 50%;
+	}
+#imgder img{
+        -webkit-box-shadow: 2px 2px 0px 0px  #82c3a6;
+        -moz-box-shadow: 2px 2px 0px 0px  #82c3a6;
+         box-shadow: 2px 2px 0px 0px #82c3a6;
+         position: relative;
+         top: 0px;
+         left: 0px;
+         transition-property: position relative;
+         transition-duration: 0.5s;
+         transition-timing-function: linear;
+        }
+        #imgder img:hover{
+         top: -5px;
+         left: 20px; 
+        }
+            
+footer{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        color: black;
+        }
+        
+footer a{
+            color: black;
+        }
+
+footer h1{
+        font-size: 1.8em;
+        }
+        
+footer p{
+        font-size: 1em;
+        }
+        
+footer div{
+        width: 25%;
+        padding-left: 2%;
+        background-color: #C6d5c5;
+        }
+        
+#redes img{
+         width: 9%;
+        }
+        
+#derechos img{
+         width: 9%;
+        }
+
+#contacto{
+        -webkit-border-bottom-left-radius: 10px;
+        -moz-border-radius-bottomleft: 10px;
+        border-bottom-left-radius: 10px;
+        }
+        
+#derechos{
+        -webkit-border-bottom-right-radius: 10px;
+        -moz-border-radius-bottomright: 10px;
+        border-bottom-right-radius: 10px;
+        }
+        
+@keyframes slidein  {
+0% {
+margin-top: 150%;
+}
+60% {
+margin-top: -5%;
+}
+100% {
+margin-top: 0%;
+}
+}
+
+
+@media screen and (max-width: 900px){
+
+.contenido
+	{
+        width: 100%;
+	margin: 0 auto;
+	}
+        
+        header{
+        flex-wrap: wrap;
+        height: 20vw;
+        }
+        
+        header h1{
+        width: 100%;
+        text-align: center;
+        font-size: 7vw;
+        }
+        
+        nav{
+        width: 50%;
+        padding: 10px 0;
+        }
+        nav a{
+        width: 33.33%;
+        padding-left: 15px;
+        font-size: 4vw;
+        }
+        
+        #imgder{
+            width: 100%;
+        }
+        #imgizq{
+            width: 100%;
+        }
+footer div{
+        width: 100%;
+        padding-left: 5%;
+        padding-bottom: 60px;
+}
+        
+#redes img{
+         width: 3vw;
+        }
+        
+#contacto{
+        -webkit-border-bottom-left-radius: 0;
+        -moz-border-radius-bottomleft: 0;
+        border-bottom-left-radius: 0;
+        }        
+        
+#derechos{
+        -webkit-border-bottom-left-radius: 10px;
+        -moz-border-radius-bottomleft: 10px;
+        border-bottom-left-radius: 10px;
+        }
+        
+#derechos img{
+         width: 3vw;
+        }
+        
+footer h1{
+        font-size: 6vw;
+        }
+        
+footer p{
+        font-size: 3vw;
+        }       
+}
